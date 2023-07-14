@@ -11,7 +11,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static('public'));
 
-app.listen(process.env.PORT || 3000, ()=>{
+app.listen(3000, ()=>{
     console.log("Running server on port 3000");
 });
 
@@ -73,8 +73,3 @@ app.post('/failure', (req, res)=>{
 });
 
 
-// api key
-//bec6589dfa747a3d7b227b7cf0790e49-us12
-
-// audience ID
-//c2893a38da
